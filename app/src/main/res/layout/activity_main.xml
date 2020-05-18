@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@null"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/TextView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Covid"
+        android:textAllCaps="true"
+        android:textColor="#E91E63"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImageView1"
+        tools:text="Covid-19" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/coronavirus"
+        android:textAllCaps="true"
+        android:textColor="#F34AB5"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageView1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="coronavirus:" />
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/Kabhi kabhi lagta hai"
+        android:textColor="#4CAF50"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TextView2"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2"
+        tools:text='"Kabhi kabhi lagta hai' />
+
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="@string/apun hi Khatarnaak hai"
+        android:textColor="#4CAF50"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView1"
+        tools:text='apun hi Khatarnaak hai"' />
+
+    <TextView
+        android:id="@+id/TextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Stay Home"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/ImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView4"
+        tools:text="Stay Home" />
+
+    <TextView
+        android:id="@+id/TextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/Stay Safe"
+        android:textColor="#03A9F4"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView2"
+        tools:text="Stay Safe" />
+
+    <ImageView
+        android:id="@+id/ImageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/TextView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView5"
+        app:srcCompat="@drawable/covid19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
